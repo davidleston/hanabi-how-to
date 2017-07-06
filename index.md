@@ -7,13 +7,13 @@
   --tileHeight: 1.75em;
 }
 
-pile tiles {
+.pile .tiles {
   display: inline-flex;
   align-items: flex-end;
   flex-direction: column-reverse;
 }
 
-pile, hand {
+.pile, .hand {
   display: inline-block;
   background: #eee;
   padding: calc(var(--tileBorderRadius) * 2);
@@ -26,12 +26,12 @@ header {
   margin-bottom: var(--tileBorderRadius);
 }
 
-tiles {
+.tiles {
   display: flex;
   align-items: flex-end;
 }
 
-tile {
+.tile {
   order: 1;
   padding: 5px;
   display: inline-flex;
@@ -46,23 +46,23 @@ tile {
   border-radius: var(--tileBorderRadius);
 }
 
-hand tile {
+.hand .tile {
   margin-top: calc(var(--tileWidth) - var(--tileHeight));  
 }
 
-tile[tapped] {
+[tapped] {
   flex-direction: column;
   width: var(--tileHeight);
   height: var(--tileWidth);
   margin-top: 0;
 }
 
-tile::before, tile::after {
+.tile::before, .tile::after {
   flex: 1;
   text-align: center;
 }
 
-tile::before {
+.tile::before {
   content: attr(rank);
   font-weight: bold;
   font-size: 110%;
@@ -120,21 +120,17 @@ tile::before {
   content: '🌈';
 }
 
-tile[unsafe] {
-  --sparseness: 4px;
-  background: repeating-linear-gradient(45deg, var(--tileBackground), var(--tileBackground) var(--sparseness), yellow var(--sparseness), yellow calc(var(--sparseness) + 1px));
-}
 </style>
 
 # hanabi-how-to
 
-<hand>
+<section class="hand">
   <header>Player 1</header>
-  <tiles>
-    <tile color=yellow rank=1 tapped></tile>
-    <tile color=yellow rank=2></tile>
-    <tile color=yellow rank=3></tile>
-    <tile color=yellow rank=4></tile>
-    <tile color=yellow rank=5></tile>
-  </tiles>
-</hand>
+  <section class="tiles">
+    <div class=tile color=yellow rank=1 tapped></div>
+    <div class=tile color=yellow rank=2></div>
+    <div class=tile color=yellow rank=3></div>
+    <div class=tile color=yellow rank=4></div>
+    <div class=tile color=yellow rank=5></div>
+  </section>
+</section>
