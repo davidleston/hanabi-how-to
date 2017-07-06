@@ -13,7 +13,7 @@
   --tileHeight: 1.75em;
 }
 
-.pile .tiles {
+.pile tiles {
   display: inline-flex;
   align-items: flex-end;
   flex-direction: column-reverse;
@@ -32,12 +32,12 @@ header {
   margin-bottom: var(--tileBorderRadius);
 }
 
-.tiles {
+tiles {
   display: flex;
   align-items: flex-end;
 }
 
-.tile {
+tile {
   order: 1;
   padding: 5px;
   display: inline-flex;
@@ -52,7 +52,7 @@ header {
   border-radius: var(--tileBorderRadius);
 }
 
-.hand .tile {
+.hand tile {
   margin-top: calc(var(--tileWidth) - var(--tileHeight));
 }
 
@@ -63,12 +63,12 @@ header {
   margin-top: 0;
 }
 
-.tile::before, .tile::after {
+tile::before, tile::after {
   flex: 1;
   text-align: center;
 }
 
-.tile::before {
+tile::before {
   content: attr(rank);
   font-weight: bold;
   font-size: 110%;
