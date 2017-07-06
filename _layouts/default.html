@@ -13,13 +13,13 @@
   --tileHeight: 1.75em;
 }
 
-.pile tiles {
+pile tiles {
   display: inline-flex;
   align-items: flex-end;
   flex-direction: column-reverse;
 }
 
-.pile, .hand {
+pile, hand {
   display: inline-block;
   background: #eee;
   padding: calc(var(--tileBorderRadius) * 2);
@@ -52,7 +52,7 @@ tile {
   border-radius: var(--tileBorderRadius);
 }
 
-.hand tile {
+hand tile {
   margin-top: calc(var(--tileWidth) - var(--tileHeight));
 }
 
