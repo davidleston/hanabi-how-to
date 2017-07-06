@@ -1,4 +1,4 @@
-<script>
+<style>
 :root {
   font-family: sans-serif;
   --tileBackground: #222;
@@ -124,7 +124,7 @@ tile[unsafe] {
   --sparseness: 4px;
   background: repeating-linear-gradient(45deg, var(--tileBackground), var(--tileBackground) var(--sparseness), yellow var(--sparseness), yellow calc(var(--sparseness) + 1px));
 }
-</script>
+</style>
 
 # hanabi-how-to
 
