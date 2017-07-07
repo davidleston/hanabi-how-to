@@ -219,7 +219,7 @@ The leftmost position in a hand, the position of the next tile to be discarded, 
 </game>
 
 #### Play position / Play side
-The rightmost position in a hand is called the play position or the play side of the hand. When you intend to play a tile move it to the play position. When you draw a tile you place it immediately to the left of all the tiles you intend to play.
+The rightmost position in a hand is called the play position or the play side of the hand.
 
 <game>
   <hand>
@@ -241,6 +241,84 @@ The rightmost position in a hand is called the play position or the play side of
       <tile hidden></tile>
       <tile hidden></tile>
       <tile hidden><highlighted></highlighted></tile>
+    </tiles>
+  </hand>
+</game>
+
+When you intend to play a tile move it to the play position. When you clue your teammate "twos":
+
+<game>
+  <hand>
+    <header>Your view of teammate's hand</header>
+    <tiles>
+      <tile color="blue" rank="1"></tile>
+      <tile color="red" rank="1"></tile>
+      <tile color="yellow" rank="2"><highlighted></highlighted></tile>
+      <tile color="green" rank="2"><highlighted></highlighted></tile>
+      <tile color="red" rank="4"></tile>
+    </tiles>
+  </hand>
+
+  <hand>
+    <header>Teammate's perspective</header>
+    <tiles>
+      <tile hidden></tile>
+      <tile hidden><highlighted></highlighted></tile>
+      <tile hidden><highlighted></highlighted></tile>
+      <tile hidden></tile>
+      <tile hidden></tile>
+    </tiles>
+  </hand>
+</game>
+
+Your teammate will move those twos to the play position:
+
+<game>
+  <hand>
+    <header>Your view of teammate's hand</header>
+    <tiles>
+      <tile color="yellow" rank="2" tapped><highlighted></highlighted></tile>
+      <tile color="green" rank="2" tapped><highlighted></highlighted></tile>
+      <tile color="blue" rank="1"></tile>
+      <tile color="red" rank="1"></tile>
+      <tile color="red" rank="4"></tile>
+    </tiles>
+  </hand>
+
+  <hand>
+    <header>Teammate's perspective</header>
+    <tiles>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden tapped><highlighted></highlighted></tile>
+      <tile hidden tapped><highlighted></highlighted></tile>
+    </tiles>
+  </hand>
+</game>
+
+When a tile is drawn it is place it immediately to the left of all the tiles intended for play. In this example after the yellow 2 is played the new tile is drawn onto the left of the green 2:
+
+<game>
+  <hand>
+    <header>Your view of teammate's hand</header>
+    <tiles>
+      <tile color="green" rank="2" tapped></tile>
+      <tile color="rainbow" rank="3"><highlighted></highlighted></tile>
+      <tile color="blue" rank="1"></tile>
+      <tile color="red" rank="1"></tile>
+      <tile color="red" rank="4"></tile>
+    </tiles>
+  </hand>
+
+  <hand>
+    <header>Teammate's perspective</header>
+    <tiles>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden><highlighted></highlighted></tile>
+      <tile hidden tapped></tile>
     </tiles>
   </hand>
 </game>
