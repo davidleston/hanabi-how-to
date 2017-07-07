@@ -27,7 +27,7 @@ If it's the first turn of the game and you see your teammate has the following t
   <header>Teammate's hand</header>
   <tiles>
     <tile color="yellow" rank="2"></tile>
-    <tile color="blue" rank="1"></tile>
+    <tile color="blue" rank="1"><highlighted</highlighted></tile>
     <tile color="green" rank="2"></tile>
     <tile color="red" rank="4"></tile>
     <tile color="white" rank="3"></tile>
@@ -35,3 +35,16 @@ If it's the first turn of the game and you see your teammate has the following t
 </hand>
 
 You can provide the clue "blue" and your teammate will assume it is playable and will likely play it on their next turn.
+
+Similarly, when you are told a tile is a two, you can assume it is a playable two and you would likely want to play it on your next turn.
+
+<hand>
+  <header>Your hand</header>
+  <tiles>
+    <tile hidden></tile>
+    <tile hidden><highlighted</highlighted></tile>
+    <tile hidden></tile>
+    <tile hidden><highlighted><highlighted></tile>
+    <tile hidden></tile>
+  </tiles>
+</hand>

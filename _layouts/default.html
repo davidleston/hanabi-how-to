@@ -50,6 +50,8 @@ tile {
   box-shadow: inset 0 0 7px black;
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
+  position: relative;
+
 }
 
 hand tile {
@@ -63,32 +65,43 @@ hand tile {
   margin-top: 0;
 }
 
-tile::before, tile::after {
+tile:before, tile:after {
   flex: 1;
   text-align: center;
 }
 
-tile::before {
+tile:before {
   content: attr(rank);
   font-weight: bold;
   font-size: 110%;
 }
 
-[hidden]::before {
-  content: '⛩️';
+highlighted::before {
+  position: absolute;
+  top: -1.2em;
+  left: 0;
+  content: '☛';
+  font-size: 225%;
+  transform: rotate(60deg);
+  color: var(--tileBackground);
+  z-index: 1;
+}
+
+[hidden]:before {
+  content: '⛩';
 }
 
 [color=yellow] {
   color: yellow;
 }
-[color=yellow]::after {
+[color=yellow]:after {
   content: '🌼';
 }
 [color=blue] {
   color: deepskyblue;
 }
 
-[color=blue]::after {
+[color=blue]:after {
   content: '⚘';
   font-size: 160%;
 }
@@ -97,7 +110,7 @@ tile::before {
   color: lightgreen;
 }
 
-[color=green]::after {
+[color=green]:after {
   content: '☘'
 }
 
@@ -105,7 +118,7 @@ tile::before {
   color: deeppink;
 }
 
-[color=red]::after {
+[color=red]:after {
   content: '🌹';
 }
 
@@ -113,7 +126,7 @@ tile::before {
   color: ghostwhite;
 }
 
-[color=white]::after {
+[color=white]:after {
   content: '❀';
   font-size: 140%;
 }
@@ -122,7 +135,7 @@ tile::before {
   color: ghostwhite;
 }
 
-[color=rainbow]::after {
+[color=rainbow]:after {
   content: '🌈';
 }
 
