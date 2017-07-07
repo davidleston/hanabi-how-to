@@ -281,3 +281,62 @@ When referring to another player's tiles right and left is used from the perspec
 #### Information vs Clue
 
 A clue is telling someone a color or number. Clueing is one way to provide information. Other ways to communicate information is discussed later.
+
+### House Rules
+Hanabi is the game that you make it. Here are some rules I play by that may be different from how others play. I consider these to be rules rather than conventions.
+- You may only rearrange tiles when it is your turn or as the result of receiving a clue.
+- Arrangement and tapping of tiles are purely confirmation of conventions. Tiles must not be arranged or tapped in such a way that information is conveyed that wouldn’t already be understood without rearrangement or tapping.
+- Clues must identify at least one tile.
+
+### General tips
+- Prioritize getting more tiles played sooner
+- Don’t worry about how many clues are left
+- Don’t be afraid to discard
+- Try to convey as much information in each turn
+
+## Chaining / clueing multiple tiles
+
+When multiple tiles are clued the tiles are played from right to left. The collection tiles queued up for play is called the chain.
+
+### Turning off chains
+
+Whenever a clue includes the head of a chain the entire chain is saved (no longer queued for play, no longer in the line of succession).
+
+### Playing through a chain being turned off
+
+If such a clue is a color clue and the only tile in the chain clued is the head and there are other tiles not in the chain included in the clue, then the other tiles are queued up. This is called playing through the clue. Otherwise any tiles included in a clue to the head of the chain are also saved. The distinction between number and color clues only applies to clues that include the head of a chain or the chop (discussed later).
+
+### Reordering a chain
+
+A clue that contains one or more tiles in a chain (but not the head of the chain) moves those tiles to the head of the chain. The tiles that are moved to the head of the chain maintain their order. Any tiles included in the clue that were not in the chain are saved.
+
+### Alternative to chaining
+
+A team may decide to play a game with chaining off. The decision to play with chaining on or off is made before the game begins. When chaining is off the rightmost tile in a multi-tile clue is queued for play and the other tiles are saved.
+
+## Saving / playing the chop
+A number clue that includes the chop means to save all the tiles in the clue. A color clue means means the same thing as if the chop was not involved. This distinction between number and color clues only applies to clues that include the head of a chain or the chop.
+
+### Saving multiple tiles with one clue
+An early save is saving a tile before it is on the chop. A tile can be saved early by cluing a number that is both not currently playable and not clearly safe to discard. A common early save is to clue a five when there are no playable fives. Saving a tile early also saves the chop.
+
+### Providing safe discard saves the chop
+    
+Another way to save the chop is to clue one or more tiles such that it’s clearly discardable. This is prioritize the discarding of these tiles and save the chop. This can be done by cluing number or color.
+
+### Max clues to prevent discard
+
+The rules disallow discarding when all eight clues are available. If the next player has an unsafe discard and all eight clues are available on your turn and you have a play then go ahead and play to maintain max clues on the next player’s turn. If seven clues are available and you’re about to play a five then play the five to max the clues. If seven clues are available and you can discard then discard. The exception to this last one is if your chop might be future playable and you can see that the next player’s penultimate discard is not future playable then go ahead and clue the save. They’ll discard the already played tile and you’ll have saved a potential future playable from being discarded from your chop. The reason for delaying cluing the save is because delaying might prevent the need to save.
+    
+There may be situations in which multiple tiles need to be saved and none of the above are options. In a games with more than two players everyone is responsible for keeping an eye out for this situation. Multiple players may need to clue a player before their next turn. This means you’re looking at more than just the next player’s chop. If a you receive a save clue from two players before you in turn order and the interim player doesn’t have a play queued nor has a useful clue to give then assume the interim player is going to give you another save clue and save one more tile in from the chop than you normally would.
+    
+Clueing to play a tile that results in a bomb means save two from the from the chop. You can clue to play a tile that the player already knows to be unplayable and they will save two on the chop without actually playing. (Doesn't work if it's a forced clue)
+    
+Discarding / playing a tile that isn't expected tells the other player to save that many tiles. This is very unsafe and should only be used when absolutely necessary such as needing to save more than two tiles or needing to save tiles without clues. If the situation allows play instead of discarding because you might get lucky and actually get a valid play.
+
+## Finesse and bluff (3 or more players)
+
+- only bluff one up
+- Forces intermediate player to play
+- Cannot bluff on a forced rainbow, a forced rainbow is always a finesse.
+- Reverse finesse and reverse bluff requires convention that clueing additional tiles appends to the chain either always or when it’s a possible reverse finesse/bluff.
