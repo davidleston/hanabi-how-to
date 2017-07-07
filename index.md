@@ -102,24 +102,24 @@ When all the ones have been played:
 <pile>
   <header>Played</header>
   <tiles>
-    <tile color=yellow rank=1></tile>
-    <tile color=yellow rank=2></tile>
-    <tile color=yellow rank=3></tile>
-    <tile color=yellow rank=4></tile>
+    <tile color="yellow" rank="1"></tile>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="yellow" rank="3"></tile>
+    <tile color="yellow" rank="4"></tile>
   </tiles>
   <tiles>
-    <tile color=blue rank=1></tile>
-    <tile color=blue rank=2></tile>
-    <tile color=blue rank=3></tile>
+    <tile color="blue" rank="1"></tile>
+    <tile color="blue" rank="2"></tile>
+    <tile color="blue" rank="3"></tile>
   </tiles>
   <tiles>
-    <tile color=red rank=1></tile>
+    <tile color="red" rank="1"></tile>
   </tiles>
   <tiles>
-    <tile color=white rank=1></tile>
+    <tile color="white" rank="1"></tile>
   </tiles>
   <tiles>
-    <tile color=rainbow rank=1></tile>
+    <tile color="rainbow" rank="1"></tile>
   </tiles>
 </pile>
 
@@ -155,20 +155,20 @@ If a tile that’s about to be discarded is clued then the clue is to not discar
 <pile>
   <header>Played</header>
   <tiles>
-    <tile color=yellow rank=4></tile>
+    <tile color="yellow" rank="4"></tile>
   </tiles>
   <tiles>
-    <tile color=blue rank=3></tile>
+    <tile color="blue" rank="3"></tile>
   </tiles>
   <tiles>
-    <tile color=red rank=1></tile>
-    <tile color=red rank=4></tile>
+    <tile color="red" rank="1"></tile>
+    <tile color="red" rank="4"></tile>
   </tiles>
   <tiles>
-    <tile color=white rank=1></tile>
+    <tile color="white" rank="1"></tile>
   </tiles>
   <tiles>
-    <tile color=rainbow rank=1></tile>
+    <tile color="rainbow" rank="1"></tile>
   </tiles>
 </pile>
 
