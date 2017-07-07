@@ -192,6 +192,7 @@ In other situations a clue is an instructions to play a tile.
 ### Placement of tiles and terminology
 Chop
 : The leftmost position in a hand, the position of the next tile to be discarded, is called the chop - as in the chopping block.
+  
   <hand>
     <header>Teammate's hand</header>
     <tiles>
@@ -241,6 +242,7 @@ Safe / Unsafe
 
 Tap
 : When a tile is part of a clue it is rotated so it stands up. These tiles are said to be tapped.
+  
   <hand>
     <header>Teammate's hand</header>
     <tiles>
