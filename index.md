@@ -274,6 +274,33 @@ When a tile is part of a clue it is rotated so it stands up. These tiles are sai
 
 Tiles that you intend to not discard are said to be saved. These tiles are no longer in the line of succession to be chopped. Place these tiles in a back row between you and the tiles that are in line of succession.
     
+<hand>
+  <header>Teammate's hand</header>
+  <tiles>
+    <tile color="blue" rank="5" tapped><highlighted></highlighted></tile>
+  </tiles>
+  <tiles>
+    <tile color="red" rank="1"></tile>
+    <tile color="yellow" rank="2" tapped></tile>
+    <tile color="green" rank="2" tapped></tile>
+    <tile color="red" rank="4"></tile>
+  </tiles>
+</hand>
+
+<hand>
+  <header>Your hand</header>
+  <tiles>
+    <tile hidden></tile>
+    <tile hidden></tile>
+    <tile hidden></tile>
+  </tiles>
+  <tiles>
+    <tile hidden tapped><highlighted></highlighted></tile>
+    <tile hidden tapped><highlighted></highlighted></tile>
+  </tiles>
+</hand>
+
+
 #### Right / Left
 
 When referring to another player's tiles right and left is used from the perspective of that other player. When another play draws a tile they put it on the the right side of their hand from their perspective.
