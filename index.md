@@ -281,8 +281,8 @@ Tiles that you intend to not discard are said to be saved. These tiles are no lo
   </tiles>
   <tiles>
     <tile color="red" rank="1"></tile>
-    <tile color="yellow" rank="2" tapped></tile>
-    <tile color="green" rank="2" tapped></tile>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="green" rank="2"></tile>
     <tile color="red" rank="4"></tile>
   </tiles>
 </hand>

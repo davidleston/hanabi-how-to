@@ -35,6 +35,11 @@ header {
 tiles {
   display: flex;
   align-items: flex-end;
+  justify-content: center;
+}
+
+tiles + tiles {
+  margin-top: var(--tileHeight);
 }
 
 tile {
