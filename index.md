@@ -27,9 +27,9 @@ If it's the first turn of the game and you see your teammate has the following t
   <header>Teammate's hand</header>
   <tiles>
     <tile color="yellow" rank="2"></tile>
-    <tile color="blue" rank="1"><highlighted></highlighted></tile>
     <tile color="green" rank="2"></tile>
     <tile color="red" rank="4"></tile>
+    <tile color="blue" rank="1"><highlighted></highlighted></tile>
     <tile color="white" rank="3"></tile>
   </tiles>
 </hand>
@@ -43,8 +43,38 @@ Similarly, when you are told a tile is a two, you can assume it is a playable tw
   <tiles>
     <tile hidden></tile>
     <tile hidden></tile>
-    <tile hidden></tile>
     <tile hidden><highlighted><highlighted></tile>
     <tile hidden></tile>
+    <tile hidden></tile>
+  </tiles>
+</hand>
+
+### Succession
+
+With succession tiles are discarded off the left and new tiles are drawn onto the right. Players discard tiles that have been in their hand the longest. This allows clues to clearly be instructions to play while a tile that has not received any clues is implicitly okay safe to discard.
+
+When our teammate plays their blue tile:
+
+<hand>
+  <header>Teammate's hand</header>
+  <tiles>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="green" rank="2"></tile>
+    <tile color="red" rank="4"></tile>
+    <tile color="blue" rank="1"><highlighted></highlighted></tile>
+    <tile color="white" rank="3"></tile>
+  </tiles>
+</hand>
+
+A new tile will be drawn and placed on their right side of their hand:
+
+<hand>
+  <header>Teammate's hand</header>
+  <tiles>
+    <tile color="rainbow" rank="1"></tile>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="green" rank="2"></tile>
+    <tile color="red" rank="4"></tile>
+    <tile color="white" rank="3"></tile>
   </tiles>
 </hand>
