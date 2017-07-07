@@ -66,7 +66,7 @@ When our teammate plays their blue tile:
   </tiles>
 </hand>
 
-A new tile will be drawn and placed on their right side of their hand:
+A new tile will be drawn and placed on the right side (from their perspective) of their hand:
 
 <hand>
   <header>Teammate's hand</header>
@@ -78,3 +78,135 @@ A new tile will be drawn and placed on their right side of their hand:
     <tile color="white" rank="3"></tile>
   </tiles>
 </hand>
+
+On their next turn they discard their chop (the white three) and draw a new tile:
+
+<hand>
+  <header>Teammate's hand</header>
+  <tiles>
+    <tile color="rainbow" rank="4"></tile>
+    <tile color="rainbow" rank="1"></tile>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="green" rank="2"></tile>
+    <tile color="red" rank="4"></tile>
+  </tiles>
+</hand>
+
+
+### Clues are to play
+
+If a clue identifies a tile as unambiguously safe to discard then the intention for that tile to be discarded before other tiles.
+
+When all the ones have been played:
+
+<pile>
+  <header>Played</header>
+  <tiles>
+    <tile color=yellow rank=1></tile>
+    <tile color=yellow rank=2></tile>
+    <tile color=yellow rank=3></tile>
+    <tile color=yellow rank=4></tile>
+  </tiles>
+  <tiles>
+    <tile color=blue rank=1></tile>
+    <tile color=blue rank=2></tile>
+    <tile color=blue rank=3></tile>
+  </tiles>
+  <tiles>
+    <tile color=red rank=1></tile>
+  </tiles>
+  <tiles>
+    <tile color=white rank=1></tile>
+  </tiles>
+  <tiles>
+    <tile color=rainbow rank=1></tile>
+  </tiles>
+</pile>
+
+And our teammate has the following hand:
+
+<hand>
+  <header>Teammate's hand</header>
+  <tiles>
+    <tile color="rainbow" rank="4"></tile>
+    <tile color="rainbow" rank="1"></tile>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="green" rank="2"></tile>
+    <tile color="red" rank="4"></tile>
+  </tiles>
+</hand>
+
+We can provide the clue "one" and our teammate will discard the one before discarding any other tiles.
+
+<hand>
+  <header>Teammate's hand</header>
+  <tiles>
+    <tile color="rainbow" rank="4"></tile>
+    <tile color="rainbow" rank="1"></tile>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="green" rank="2"></tile>
+    <tile color="red" rank="4"></tile>
+  </tiles>
+</hand>
+
+
+If a tile that’s about to be discarded is clued then the clue is to not discard that tile.
+
+<pile>
+  <header>Played</header>
+  <tiles>
+    <tile color=yellow rank=4></tile>
+  </tiles>
+  <tiles>
+    <tile color=blue rank=3></tile>
+  </tiles>
+  <tiles>
+    <tile color=red rank=1></tile>
+    <tile color=red rank=4></tile>
+  </tiles>
+  <tiles>
+    <tile color=white rank=1></tile>
+  </tiles>
+  <tiles>
+    <tile color=rainbow rank=1></tile>
+  </tiles>
+</pile>
+
+And our teammates hand:
+
+<hand>
+  <header>Teammate's hand</header>
+  <tiles>
+    <tile color="blue" rank="1"></tile>
+    <tile color="red" rank="1"></tile>
+    <tile color="yellow" rank="2"></tile>
+    <tile color="green" rank="2"></tile>
+    <tile color="red" rank="4"></tile>
+  </tiles>
+</hand>
+
+We can see the red 4 needs to be saved from being discard as the ony other red 4 has already been discarded. By providing the clue "four" we can save this tile from being discarded.
+
+In other situations a clue is an instructions to play a tile.
+
+### Placement of tiles and terminology
+Chop
+: The leftmost position in a hand, the position of the next tile to be discarded, is called the chop - as in the chopping block.
+
+Play position / Play side
+: The rightmost position in a hand is called the play position or the play side of the hand. When you intend to play a tile move it to the play position. When you draw a tile you place it immediately to the left of all the tiles you intend to play.
+
+Safe / Unsafe
+: Safe and unsafe refers to the ability to discard a tile without losing points. Fives are always unsafe. A tile is safe if it is a duplicate of a tile that’s already been played or not a duplicate of a tile that’s been discarded. Discarded tiles are kept in two piles. The unsafe pile is a collection of tiles whose duplicates are unsafe to discard. As tiles are played their duplicates are moved from the unsafe discard to the safe discard.
+
+Tap
+: When a tile is part of a clue it is rotated so it stands up. These tiles are said to be tapped.
+
+Saved tiles
+: Tiles that you intend to not discard are said to be saved. These tiles are no longer in the line of succession to be chopped. Place these tiles in a back row between you and the tiles that are in line of succession.
+    
+Right / Left
+: When referring to another player's tiles right and left is used from the perspective of that other player. When another play draws a tile they put it on the the right side of their hand from their perspective.
+    
+Information vs Clue
+: A clue is telling someone a color or number. Clueing is one way to provide information. Other ways to communicate information is discussed later.
