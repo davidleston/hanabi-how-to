@@ -192,28 +192,26 @@ In other situations a clue is an instructions to play a tile.
 ### Placement of tiles and terminology
 Chop
 : The leftmost position in a hand, the position of the next tile to be discarded, is called the chop - as in the chopping block.
-
-<hand>
-  <header>Teammate's hand</header>
-  <tiles>
-    <tile color="blue" rank="1"></tile>
-    <tile color="red" rank="1"></tile>
-    <tile color="yellow" rank="2"></tile>
-    <tile color="green" rank="2"></tile>
-    <tile color="red" rank="4"><highlighted></highlighted></tile>
-  </tiles>
-</hand>
-
-<hand>
-  <header>Your hand</header>
-  <tiles>
-    <tile hidden></tile>
-    <tile hidden></tile>
-    <tile hidden></tile>
-    <tile hidden></tile>
-    <tile hidden><highlighted></highlighted></tile>
-  </tiles>
-</hand>
+  <hand>
+    <header>Teammate's hand</header>
+    <tiles>
+      <tile color="blue" rank="1"></tile>
+      <tile color="red" rank="1"></tile>
+      <tile color="yellow" rank="2"></tile>
+      <tile color="green" rank="2"></tile>
+      <tile color="red" rank="4"><highlighted></highlighted></tile>
+    </tiles>
+  </hand>
+  <hand>
+    <header>Your hand</header>
+    <tiles>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden><highlighted></highlighted></tile>
+    </tiles>
+  </hand>
 
 Play position / Play side
 : The rightmost position in a hand is called the play position or the play side of the hand. When you intend to play a tile move it to the play position. When you draw a tile you place it immediately to the left of all the tiles you intend to play.
