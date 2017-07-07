@@ -27,7 +27,7 @@ If it's the first turn of the game and you see your teammate has the following t
   <header>Teammate's hand</header>
   <tiles>
     <tile color="yellow" rank="2"></tile>
-    <tile color="blue" rank="1"><highlighted</highlighted></tile>
+    <tile color="blue" rank="1"><highlighted></highlighted></tile>
     <tile color="green" rank="2"></tile>
     <tile color="red" rank="4"></tile>
     <tile color="white" rank="3"></tile>
