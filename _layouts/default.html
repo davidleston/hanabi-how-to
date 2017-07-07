@@ -13,6 +13,11 @@
   --tileHeight: 1.75em;
 }
 
+game {
+  display: flex;
+  align-items: flex-end;
+}
+
 pile tiles {
   display: inline-flex;
   align-items: flex-end;
@@ -57,10 +62,6 @@ tile {
   border-radius: var(--tileBorderRadius);
   position: relative;
 
-}
-
-hand tile {
-  margin-top: calc(var(--tileWidth) - var(--tileHeight));
 }
 
 [tapped] {
