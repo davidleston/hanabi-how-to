@@ -76,7 +76,6 @@ tile {
 tile:before, tile:after {
   flex: 1;
   text-align: center;
-  max-height: 1.6em;
 }
 
 tile:before {
@@ -94,6 +93,10 @@ highlighted::before {
   transform: rotate(60deg);
   color: var(--tileBackground);
   text-shadow: 0 0 1px var(--pileBackground);
+}
+
+[tapped][hidden] {
+  flex-flow: row;
 }
 
 [hidden]:before {
