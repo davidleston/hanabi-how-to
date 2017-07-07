@@ -100,7 +100,7 @@ If a clue identifies a tile as unambiguously safe to discard then the intention 
 When all the ones have been played:
 
 <pile>
-  <header>Played</header>
+  <header>Played tiles</header>
   <tiles>
     <tile color="yellow" rank="1"></tile>
     <tile color="yellow" rank="2"></tile>
@@ -266,7 +266,7 @@ When a tile is part of a clue it is rotated so it stands up. These tiles are sai
     <tile hidden tapped></tile>
     <tile hidden></tile>
     <tile hidden></tile>
-    <tile hidden><highlighted></highlighted></tile>
+    <tile hidden></tile>
   </tiles>
 </hand>
 
