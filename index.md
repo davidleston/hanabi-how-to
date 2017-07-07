@@ -154,7 +154,7 @@ If a tile that is about to be discarded is clued then the clue is to not discard
 
 <game>
   <pile>
-    <header>Discarded tiles</header>
+    <header>Discards</header>
     <tiles>
       <tile color="yellow" rank="4"></tile>
     </tiles>
@@ -324,7 +324,47 @@ When a tile is drawn it is place it immediately to the left of all the tiles int
 </game>
 
 #### Safe / Unsafe
-Safe and unsafe refers to the ability to discard a tile without losing points. Fives are always unsafe. A tile is safe if it is a duplicate of a tile that’s already been played or not a duplicate of a tile that’s been discarded. Discarded tiles are kept in two piles. The unsafe pile is a collection of tiles whose duplicates are unsafe to discard. As tiles are played their duplicates are moved from the unsafe discard to the safe discard.
+Safe and unsafe refers to the ability to discard a tile without losing points. Fives are always unsafe. A tile is safe if it is a duplicate of a tile that’s already been played or not a duplicate of a tile that’s been discarded. Discarded tiles are kept in two piles.
+ 
+ <game>
+   <pile>
+     <header>Played tiles</header>
+     <tiles>
+       <tile color="yellow" rank="1"></tile>
+     </tiles>
+     <tiles>
+       <tile color="blue" rank="1"></tile>
+     </tiles>
+     <tiles>
+       <tile color="red" rank="1"></tile>
+       <tile color="red" rank="2"></tile>
+     </tiles>
+   </pile>
+ 
+   <pile>
+     <header>✓ Safe discards</header>
+     <tiles>
+       <tile color="yellow" rank="1"></tile>
+     </tiles>
+     <tiles>
+       <tile color="red" rank="2"></tile>
+     </tiles>
+   </pile>
+
+   <pile>
+     <header>⚠ Unsafe discards</header>
+     <tiles>
+       <tile color="yellow" rank="4"></tile>
+     </tiles>
+     <tiles>
+       <tile color="red" rank="3"></tile>
+       <tile color="red" rank="4"></tile>
+     </tiles>
+   </pile>
+ </game>
+
+ 
+ The unsafe pile is a collection of tiles whose duplicates are unsafe to discard. As tiles are played their duplicates are moved from the unsafe discard to the safe discard.
 
 #### Tap
 
