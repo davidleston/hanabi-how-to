@@ -11,6 +11,7 @@
   --tileBorderRadius: 5px;
   --tileWidth: 3em;
   --tileHeight: 1.75em;
+  --pileBackground: #eee;
 }
 
 game {
@@ -27,7 +28,7 @@ pile tiles {
 
 pile, hand {
   display: inline-block;
-  background: #eee;
+  background: var(--pileBackground);
   padding: calc(var(--tileBorderRadius) * 2);
   border-radius: var(--tileBorderRadius);
   margin: 5px;
@@ -92,7 +93,7 @@ highlighted::before {
   font-size: 200%;
   transform: rotate(60deg);
   color: var(--tileBackground);
-  z-index: 1;
+  text-shadow: 0 0 1px var(--pileBackground);
 }
 
 [hidden]:before {
