@@ -42,7 +42,7 @@ Similarly, when you are told a tile is a two, you can assume it is a playable tw
   <header>Your hand</header>
   <tiles>
     <tile hidden></tile>
-    <tile hidden><highlighted</highlighted></tile>
+    <tile hidden><highlighted></highlighted></tile>
     <tile hidden></tile>
     <tile hidden><highlighted><highlighted></tile>
     <tile hidden></tile>
