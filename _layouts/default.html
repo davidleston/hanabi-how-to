@@ -5,13 +5,24 @@
 <head>
   <title>Hanabi How To</title>
   <style>
-    :root {
+:root {
   font-family: sans-serif;
   --tileBackground: #222;
   --tileBorderRadius: 5px;
   --tileWidth: 3em;
   --tileHeight: 1.75em;
   --pileBackground: #eee;
+}
+
+html {
+  background-color:var(--pileBackground);
+  background-image:
+  radial-gradient(circle at 100% 150%, var(--pileBackground) 24%, white 25%, white 28%, var(--pileBackground) 29%, var(--pileBackground) 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 0    150%, var(--pileBackground) 24%, white 25%, white 28%, var(--pileBackground) 29%, var(--pileBackground) 36%, white 36%, white 40%, transparent 40%, transparent),
+  radial-gradient(circle at 50%  100%, white 10%, var(--pileBackground) 11%, var(--pileBackground) 23%, white 24%, white 30%, var(--pileBackground) 31%, var(--pileBackground) 43%, white 44%, white 50%, var(--pileBackground) 51%, var(--pileBackground) 63%, white 64%, white 71%, transparent 71%, transparent),
+  radial-gradient(circle at 100% 50%, white 5%, var(--pileBackground) 6%, var(--pileBackground) 15%, white 16%, white 20%, var(--pileBackground) 21%, var(--pileBackground) 30%, white 31%, white 35%, var(--pileBackground) 36%, var(--pileBackground) 45%, white 46%, white 49%, transparent 50%, transparent),
+  radial-gradient(circle at 0    50%, white 5%, var(--pileBackground) 6%, var(--pileBackground) 15%, white 16%, white 20%, var(--pileBackground) 21%, var(--pileBackground) 30%, white 31%, white 35%, var(--pileBackground) 36%, var(--pileBackground) 45%, white 46%, white 49%, transparent 50%, transparent);
+  background-size: 32px 16px;
 }
 
 game {
@@ -154,6 +165,7 @@ highlighted::before {
 
 main {
   display: flex;
+  background: var(--pileBackground);
 }
 
 body {
@@ -165,10 +177,6 @@ body {
 body > header {
   background: var(--pileBackground);
   padding: calc(var(--tileHeight)/2) calc(var(--tileWidth)/2);
-}
-
-main {
-  background: var(--pileBackground);
 }
 
 nav {
