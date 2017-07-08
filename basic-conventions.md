@@ -419,15 +419,3 @@ When referring to another player's tiles right and left is used from the perspec
 #### Information vs Clue
 
 A clue is telling someone a color or number. Clueing is one way to provide information. Other ways to communicate information is discussed later.
-
-### House Rules
-Hanabi is the game that you make it. Here are some rules I play by that may be different from how others play. I consider these to be rules rather than conventions.
-- You may only rearrange tiles when it is your turn or as the result of receiving a clue.
-- Arrangement and tapping of tiles are purely confirmation of conventions. Tiles must not be arranged or tapped in such a way that information is conveyed that wouldn’t already be understood without rearrangement or tapping.
-- Clues must identify at least one tile.
-
-### General tips
-- Prioritize getting more tiles played sooner
-- Don’t worry about how many clues are left
-- Don’t be afraid to discard
-- Try to convey as much information in each turn
