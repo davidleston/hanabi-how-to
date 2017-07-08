@@ -32,11 +32,11 @@ pile, hand {
   padding: calc(var(--tileBorderRadius) * 2);
   border-radius: var(--tileBorderRadius);
   margin: 5px;
-  box-shadow: inset 0px 0px 1px rgba(0,0,0,.5);
-  white-space: nowrap;
 }
 
-header {
+
+
+hand header {
   margin-bottom: var(--tileBorderRadius);
 }
 
@@ -151,9 +151,73 @@ highlighted::before {
   content: '🌈';
 }
 
+main {
+  display: flex;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+}
+
+body > header {
+  background: var(--pileBackground);
+  padding: var(--tileHeight) calc(var(--tileWidth)/2);
+}
+
+main {
+  background: var(--pileBackground);
+}
+
+nav {
+  width: calc(var(--tileWidth) * 5);
+}
+
+article {
+  border-radius: var(--tileBorderRadius) 0 0 0;
+  background: white;
+  width: 100%;
+  padding: 0 var(--tileWidth);
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav li {
+  list-style-type: none;
+  --space: calc(var(--tileHeight) / 2);
+  margin: 0 var(--space) var(--space) var(--space);
+  padding: var(--space);
+}
+
+.current {
+  background: white;
+}
+
   </style>
 </head>
 <body>
-  {{content}}
+  <header><h1>How to be great at Hanabi</h1></header>
+  <main>
+    <nav>
+      <ul>
+        {% assign sorted_pages = site.pages | sort: 'order' %}
+        {% for p in sorted_pages %}
+          {% if p.url == page.url %}
+            <li class="current">{{p.title}}</li>
+          {% else %}
+            <li><a href="{{p.url}}">{{p.title}}</a></li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+    <article>
+      <h2>{{page.title}}</h2>
+      {{content}}
+    </article>
+  </main>
 </body>
 </html>
