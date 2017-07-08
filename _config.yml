@@ -4,3 +4,7 @@ defaults:
       path: "" # empty string for all files
     values:
       layout: "default"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
