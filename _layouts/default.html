@@ -206,10 +206,12 @@ nav li {
       <ul>
         {% assign sorted_pages = site.pages | sort: 'order' %}
         {% for p in sorted_pages %}
-          {% if p.url == page.url %}
-            <li class="current">{{p.title}}</li>
-          {% else %}
-            <li><a href="{{p.url | prepend: site.github.url }}">{{p.title}}</a></li>
+          {% if p.order %}
+            {% if p.url == page.url %}
+              <li class="current">{{p.title}}</li>
+            {% else %}
+              <li><a href="{{p.url | prepend: site.github.url }}">{{p.title}}</a></li>
+            {% endif %}
           {% endif %}
         {% endfor %}
       </ul>

@@ -1,7 +1,7 @@
---
-title: Saving / playing the chop
+---
+title: Saving and playing the chop
 order: 5
---
+---
 
 A number clue that includes the chop means to save all the tiles in the clue. A color clue means means the same thing as if the chop was not involved. This distinction between number and color clues only applies to clues that include the head of a chain or the chop.
 
