@@ -18,6 +18,7 @@ game {
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
+  margin: calc(var(--tileBorderRadius) * -1);
 }
 
 pile tiles {
@@ -31,7 +32,8 @@ pile, hand {
   background: var(--pileBackground);
   padding: calc(var(--tileBorderRadius) * 2);
   border-radius: var(--tileBorderRadius);
-  margin: 5px;
+  margin: var(--tileBorderRadius);
+  border: 1px solid #ccc;
 }
 
 hand header {
@@ -162,7 +164,7 @@ body {
 
 body > header {
   background: var(--pileBackground);
-  padding: var(--tileHeight) calc(var(--tileWidth)/2);
+  padding: calc(var(--tileHeight)/2) calc(var(--tileWidth)/2);
 }
 
 main {
@@ -176,7 +178,7 @@ nav {
 article {
   border-radius: var(--tileBorderRadius) 0 0 0;
   background: white;
-  padding: 0 var(--tileWidth);
+  padding: 0 var(--tileHeight);
 }
 
 nav ul {

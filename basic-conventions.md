@@ -9,31 +9,35 @@ With timeliness a clue is provided only at the time it is actionable, clues are 
 
 If it's the first turn of the game and you see your teammate has the following tiles:
 
-<hand>
-  <header>Teammate's hand</header>
-  <tiles>
-    <tile color="yellow" rank="2"></tile>
-    <tile color="green" rank="2"></tile>
-    <tile color="red" rank="4"></tile>
-    <tile color="blue" rank="1"><highlighted></highlighted></tile>
-    <tile color="white" rank="3"></tile>
-  </tiles>
-</hand>
+<game>
+  <hand>
+    <header>Teammate's hand</header>
+    <tiles>
+      <tile color="yellow" rank="2"></tile>
+      <tile color="green" rank="2"></tile>
+      <tile color="red" rank="4"></tile>
+      <tile color="blue" rank="1"><highlighted></highlighted></tile>
+      <tile color="white" rank="3"></tile>
+    </tiles>
+  </hand>
+</game>
 
 You can provide the clue "blue" and your teammate will assume it is playable and will likely play it on their next turn.
 
 Similarly, when you are told a tile is a two, you can assume it is a playable two and you would likely want to play it on your next turn.
 
-<hand>
-  <header>Your hand</header>
-  <tiles>
-    <tile hidden></tile>
-    <tile hidden></tile>
-    <tile hidden><highlighted></highlighted></tile>
-    <tile hidden></tile>
-    <tile hidden></tile>
-  </tiles>
-</hand>
+<game>
+  <hand>
+    <header>Your hand</header>
+    <tiles>
+      <tile hidden></tile>
+      <tile hidden></tile>
+      <tile hidden><highlighted></highlighted></tile>
+      <tile hidden></tile>
+      <tile hidden></tile>
+    </tiles>
+  </hand>
+</game>
 
 ### Succession
 
@@ -41,43 +45,48 @@ With succession tiles are discarded off the left and new tiles are drawn onto th
 
 When our teammate plays their blue tile:
 
-<hand>
-  <header>Teammate's hand</header>
-  <tiles>
-    <tile color="yellow" rank="2"></tile>
-    <tile color="green" rank="2"></tile>
-    <tile color="red" rank="4"></tile>
-    <tile color="blue" rank="1"><highlighted></highlighted></tile>
-    <tile color="white" rank="3"></tile>
-  </tiles>
-</hand>
+<game>
+  <hand>
+    <header>Teammate's hand</header>
+    <tiles>
+      <tile color="yellow" rank="2"></tile>
+      <tile color="green" rank="2"></tile>
+      <tile color="red" rank="4"></tile>
+      <tile color="blue" rank="1"><highlighted></highlighted></tile>
+      <tile color="white" rank="3"></tile>
+    </tiles>
+  </hand>
+</game>
 
 A new tile will be drawn and placed on the right side (from their perspective) of their hand:
 
-<hand>
-  <header>Teammate's hand</header>
-  <tiles>
-    <tile color="rainbow" rank="1"></tile>
-    <tile color="yellow" rank="2"></tile>
-    <tile color="green" rank="2"></tile>
-    <tile color="red" rank="4"></tile>
-    <tile color="white" rank="3"></tile>
-  </tiles>
-</hand>
+<game>
+  <hand>
+    <header>Teammate's hand</header>
+    <tiles>
+      <tile color="rainbow" rank="1"></tile>
+      <tile color="yellow" rank="2"></tile>
+      <tile color="green" rank="2"></tile>
+      <tile color="red" rank="4"></tile>
+      <tile color="white" rank="3"></tile>
+    </tiles>
+  </hand>
+</game>
 
 On their next turn they discard their chop (the white three) and draw a new tile:
 
-<hand>
-  <header>Teammate's hand</header>
-  <tiles>
-    <tile color="rainbow" rank="4"></tile>
-    <tile color="rainbow" rank="1"></tile>
-    <tile color="yellow" rank="2"></tile>
-    <tile color="green" rank="2"></tile>
-    <tile color="red" rank="4"></tile>
-  </tiles>
-</hand>
-
+<game>
+  <hand>
+    <header>Teammate's hand</header>
+    <tiles>
+      <tile color="rainbow" rank="4"></tile>
+      <tile color="rainbow" rank="1"></tile>
+      <tile color="yellow" rank="2"></tile>
+      <tile color="green" rank="2"></tile>
+      <tile color="red" rank="4"></tile>
+    </tiles>
+  </hand>
+</game>
 
 ### Clues are to play
 
@@ -124,17 +133,18 @@ When our temmate has the following when all the ones have been played:
 
 We can provide the clue "one" and our teammate will discard the one before discarding any other tiles.
 
-<hand>
-  <header>Teammate's hand</header>
-  <tiles>
-    <tile color="rainbow" rank="4"></tile>
-    <tile color="rainbow" rank="1"></tile>
-    <tile color="yellow" rank="2"></tile>
-    <tile color="green" rank="2"></tile>
-    <tile color="red" rank="4"></tile>
-  </tiles>
-</hand>
-
+<game>
+  <hand>
+    <header>Teammate's hand</header>
+    <tiles>
+      <tile color="rainbow" rank="4"></tile>
+      <tile color="rainbow" rank="1"></tile>
+      <tile color="yellow" rank="2"></tile>
+      <tile color="green" rank="2"></tile>
+      <tile color="red" rank="4"></tile>
+    </tiles>
+  </hand>
+</game>
 
 If a tile that is about to be discarded is clued then the clue is to not discard that tile.
 
