@@ -22,7 +22,7 @@ If it's the first turn of the game and you see your teammate has the following t
   </hand>
 </game>
 
-You can provide the clue "blue" and your teammate will assume it is playable and will likely play it on their next turn.
+You can provide the clue ``blue`` and your teammate will assume it is playable and will likely play it on their next turn.
 
 Similarly, when you are told a tile is a two, you can assume it is a playable two and you would likely want to play it on your next turn.
 
@@ -131,7 +131,7 @@ When our temmate has the following when all the ones have been played:
   </hand>
 </game>
 
-We can provide the clue "one" and our teammate will discard the one before discarding any other tiles.
+We can provide the clue ``one`` and our teammate will discard the one before discarding any other tiles.
 
 <game>
   <hand>
@@ -181,7 +181,7 @@ If a tile that is about to be discarded is clued then the clue is to not discard
   </hand>
 </game>
 
-We can see the red 4 needs to be saved from being discard as the ony other red 4 has already been discarded. By providing the clue "four" we can save this tile from being discarded.
+We can see the red 4 needs to be saved from being discard as the ony other red 4 has already been discarded. By providing the clue ``four`` we can save this tile from being discarded.
 
 In other situations a clue is an instructions to play a tile.
 
@@ -241,7 +241,7 @@ The rightmost position in a hand is called the play position or the play side of
   </hand>
 </game>
 
-When you intend to play a tile move it to the play position. When you clue your teammate "twos":
+When you intend to play a tile move it to the play position. When you clue your teammate ``twos``:
 
 <game>
   <hand>

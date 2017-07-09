@@ -11,22 +11,22 @@ The leftmost position in a hand, the position of the next tile to be discarded, 
   <hand>
     <header>Teammate's hand</header>
     <tiles>
-      <tile color="blue" rank="1"></tile>
-      <tile color="red" rank="1"></tile>
-      <tile color="yellow" rank="2"></tile>
-      <tile color="green" rank="2"></tile>
-      <tile color="red" rank="4"><highlighted></highlighted></tile>
+      <tile title="blue 1"></tile>
+      <tile title="red 1"></tile>
+      <tile title="yellow 2"></tile>
+      <tile title="green 2"></tile>
+      <mark><tile title="red 4"></tile></mark>
     </tiles>
   </hand>
   
   <hand>
     <header>Your hand</header>
     <tiles>
-      <tile hidden><highlighted></highlighted></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
+      <mark><tile title="hidden"></tile></mark>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
     </tiles>
   </hand>
 </game>
@@ -39,22 +39,22 @@ The rightmost position in a hand is called the play position or the play side of
   <hand>
     <header>Teammate's hand</header>
     <tiles>
-      <tile color="blue" rank="1"><highlighted></highlighted></tile>
-      <tile color="red" rank="1"></tile>
-      <tile color="yellow" rank="2"></tile>
-      <tile color="green" rank="2"></tile>
-      <tile color="red" rank="4"></tile>
+      <mark><tile title="blue 1"></tile></mark>
+      <tile title="red 1"></tile>
+      <tile title="yellow 2"></tile>
+      <tile title="green 2"></tile>
+      <tile title="red 4"></tile>
     </tiles>
   </hand>
   
   <hand>
     <header>Your hand</header>
     <tiles>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden><highlighted></highlighted></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <mark><tile title="hidden"></tile></mark>
     </tiles>
   </hand>
 </game>
@@ -65,22 +65,22 @@ When you intend to play a tile move it to the play position. When you clue your 
   <hand>
     <header>Your view of teammate's hand</header>
     <tiles>
-      <tile color="blue" rank="1"></tile>
-      <tile color="red" rank="1"></tile>
-      <tile color="yellow" rank="2"><highlighted></highlighted></tile>
-      <tile color="green" rank="2"><highlighted></highlighted></tile>
-      <tile color="red" rank="4"></tile>
+      <tile title="blue 1"></tile>
+      <tile title="red 1"></tile>
+      <mark><tile title="yellow 2"></tile></mark>
+      <mark><tile title="green 2"></tile></mark>
+      <tile title="red 4"></tile>
     </tiles>
   </hand>
 
   <hand>
     <header>Teammate's perspective</header>
     <tiles>
-      <tile hidden></tile>
-      <tile hidden><highlighted></highlighted></tile>
-      <tile hidden><highlighted></highlighted></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
+      <tile title="hidden"></tile>
+      <mark><tile title="hidden"></tile></mark>
+      <mark><tile title="hidden"></tile></mark>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
     </tiles>
   </hand>
 </game>
@@ -91,22 +91,22 @@ Your teammate will move those twos to the play position:
   <hand>
     <header>Your view of teammate's hand</header>
     <tiles>
-      <tile color="yellow" rank="2" tapped><highlighted></highlighted></tile>
-      <tile color="green" rank="2" tapped><highlighted></highlighted></tile>
-      <tile color="blue" rank="1"></tile>
-      <tile color="red" rank="1"></tile>
-      <tile color="red" rank="4"></tile>
+      <mark><tile title="tapped yellow 2"></tile></mark>
+      <mark><tile title="tapped green 2"></tile></mark>
+      <tile title="blue 1"></tile>
+      <tile title="red 1"></tile>
+      <tile title="red 4"></tile>
     </tiles>
   </hand>
 
   <hand>
     <header>Teammate's perspective</header>
     <tiles>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden tapped><highlighted></highlighted></tile>
-      <tile hidden tapped><highlighted></highlighted></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <mark><tile title="tapped hidden"></tile></mark>
+      <mark><tile title="tapped hidden"></tile></mark>
     </tiles>
   </hand>
 </game>
@@ -117,22 +117,22 @@ When a tile is drawn it is place it immediately to the left of all the tiles int
   <hand>
     <header>Your view of teammate's hand</header>
     <tiles>
-      <tile color="green" rank="2" tapped></tile>
-      <tile color="rainbow" rank="3"><highlighted></highlighted></tile>
-      <tile color="blue" rank="1"></tile>
-      <tile color="red" rank="1"></tile>
-      <tile color="red" rank="4"></tile>
+      <tile title="tapped green 2"></tile>
+      <mark><tile title="rainbow 3"></tile></mark>
+      <tile title="blue 1"></tile>
+      <tile title="red 1"></tile>
+      <tile title="red 4"></tile>
     </tiles>
   </hand>
 
   <hand>
     <header>Teammate's perspective</header>
     <tiles>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden><highlighted></highlighted></tile>
-      <tile hidden tapped></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <mark><tile title="hidden"></tile></mark>
+      <tile title="tapped hidden"></tile>
     </tiles>
   </hand>
 </game>
@@ -145,35 +145,35 @@ Safe and unsafe refers to the ability to discard a tile without losing points. F
    <pile>
      <header>Played tiles</header>
      <tiles>
-       <tile color="yellow" rank="1"></tile>
+       <tile title="yellow 1"></tile>
      </tiles>
      <tiles>
-       <tile color="blue" rank="1"></tile>
+       <tile title="blue 1"></tile>
      </tiles>
      <tiles>
-       <tile color="red" rank="1"></tile>
-       <tile color="red" rank="2"></tile>
+       <tile title="red 1"></tile>
+       <tile title="red 2"></tile>
      </tiles>
    </pile>
  
    <pile>
      <header>✓ Safe discards</header>
      <tiles>
-       <tile color="yellow" rank="1"></tile>
+       <tile title="yellow 1"></tile>
      </tiles>
      <tiles>
-       <tile color="red" rank="2"></tile>
+       <tile title="red 2"></tile>
      </tiles>
    </pile>
 
    <pile>
      <header>⚠ Unsafe discards</header>
      <tiles>
-       <tile color="yellow" rank="4"></tile>
+       <tile title="yellow 4"></tile>
      </tiles>
      <tiles>
-       <tile color="red" rank="3"></tile>
-       <tile color="red" rank="4"></tile>
+       <tile title="red 3"></tile>
+       <tile title="red 4"></tile>
      </tiles>
    </pile>
  </game>
@@ -189,22 +189,22 @@ When a tile is part of a clue it is rotated so it stands up. These tiles are sai
   <hand>
     <header>Teammate's hand</header>
     <tiles>
-      <tile color="blue" rank="1"></tile>
-      <tile color="red" rank="1"></tile>
-      <tile color="yellow" rank="2" tapped></tile>
-      <tile color="green" rank="2" tapped></tile>
-      <tile color="red" rank="4"></tile>
+      <tile title="blue 1"></tile>
+      <tile title="red 1"></tile>
+      <tile title="tapped yellow 2"></tile>
+      <tile title="tapped green 2"></tile>
+      <tile title="red 4"></tile>
     </tiles>
   </hand>
   
   <hand>
     <header>Your hand</header>
     <tiles>
-      <tile hidden></tile>
-      <tile hidden tapped></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
+      <tile title="hidden"></tile>
+      <tile title="tapped hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
     </tiles>
   </hand>
 </game>
@@ -217,26 +217,26 @@ Tiles that you intend to not discard are said to be saved. These tiles are no lo
   <hand>
     <header>Teammate's hand</header>
     <tiles>
-      <tile color="blue" rank="5" tapped><highlighted></highlighted></tile>
+      <mark><tile title="tapped blue 5"></tile></mark>
     </tiles>
     <tiles>
-      <tile color="red" rank="1"></tile>
-      <tile color="yellow" rank="2"></tile>
-      <tile color="green" rank="2"></tile>
-      <tile color="red" rank="4"></tile>
+      <tile title="red 1"></tile>
+      <tile title="yellow 2"></tile>
+      <tile title="green 2"></tile>
+      <tile title="red 4"></tile>
     </tiles>
   </hand>
   
   <hand>
     <header>Your hand</header>
     <tiles>
-      <tile hidden></tile>
-      <tile hidden></tile>
-      <tile hidden></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
+      <tile title="hidden"></tile>
     </tiles>
     <tiles>
-      <tile hidden tapped><highlighted></highlighted></tile>
-      <tile hidden tapped><highlighted></highlighted></tile>
+      <mark><tile title="tapped hidden"></tile></mark>
+      <mark><tile title="tapped hidden"></tile></mark>
     </tiles>
   </hand>
 </game>
