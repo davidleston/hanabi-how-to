@@ -65,6 +65,7 @@ tile {
   box-shadow: inset 0 0 7px black;
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
+  text-shadow: initial;
 }
 
 [title~=tapped] {
