@@ -5,6 +5,11 @@ defaults:
     values:
       layout: "default"
 
+compress_html:
+  clippings: all
+  comments: all
+  startings: [head, body]
+
 exclude:
   - Gemfile
   - Gemfile.lock
