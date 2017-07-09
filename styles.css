@@ -70,7 +70,7 @@ tile {
 
 }
 
-[tapped] {
+[title~=tapped] {
   flex-direction: column;
   width: var(--tileHeight);
   height: var(--tileWidth);
@@ -83,9 +83,28 @@ tile:before, tile:after {
 }
 
 tile:before {
-  content: attr(rank);
   font-weight: bold;
   font-size: 110%;
+}
+
+[title~='1']:before {
+  content: '1';
+}
+
+[title~='2']:before {
+  content: '2';
+}
+
+[title~='3']:before {
+  content: '3';
+}
+
+[title~='4']:before {
+  content: '4';
+}
+
+[title~='5']:before {
+  content: '5';
 }
 
 highlighted::before {
@@ -102,60 +121,61 @@ highlighted::before {
                 1px  1px 0 var(--pileBackground);
 }
 
-[tapped][hidden] {
+[title~=tapped][title~=hidden] {
   flex-flow: row;
 }
 
-[hidden]:before {
+[title~=hidden]:before {
   content: '⛩';
 }
 
-[color=yellow] {
+[title~=yellow] {
   color: yellow;
 }
 
-[color=yellow]:after {
+[title~=yellow]:after {
   content: '🌼';
 }
-[color=blue] {
+
+[title~=blue] {
   color: deepskyblue;
 }
 
-[color=blue]:after {
+[title~=blue]:after {
   content: '⚘';
   font-size: 160%;
 }
 
-[color=green] {
+[title~=green] {
   color: lightgreen;
 }
 
-[color=green]:after {
+[title~=green]:after {
   content: '☘'
 }
 
-[color=red] {
+[title~=red] {
   color: deeppink;
 }
 
-[color=red]:after {
+[title~=red]:after {
   content: '🌹';
 }
 
-[color=white] {
+[title~=white] {
   color: ghostwhite;
 }
 
-[color=white]:after {
+[title~=white]:after {
   content: '❀';
   font-size: 140%;
 }
 
-[color=rainbow] {
+[title~=rainbow] {
   color: ghostwhite;
 }
 
-[color=rainbow]:after {
+[title~=rainbow]:after {
   content: '🌈';
 }
 
