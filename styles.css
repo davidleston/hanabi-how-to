@@ -106,17 +106,20 @@ tile:before {
 
 mark {
   background: transparent;
-  margin-top: calc(var(--tileHeight)*-1);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
 }
 
 mark:before {
   content: '☛';
+  position: absolute;
+  top: -2ex;
+  pointer-events: none;
   font-size: 180%;
-  transform: rotate(70deg);
+  transform: rotate(60deg);
   color: var(--tileBackground);
   text-shadow: -1px -1px 0 var(--pileBackground),
                 1px -1px 0 var(--pileBackground),
