@@ -130,6 +130,7 @@ mark:before {
 
 [title~=hidden]:before {
   content: '⛩';
+  color: deeppink;
 }
 
 [title~=yellow] {
