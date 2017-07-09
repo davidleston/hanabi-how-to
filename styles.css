@@ -122,6 +122,12 @@ mark:before {
                 1px -1px 0 var(--pileBackground),
                -1px  1px 0 var(--pileBackground),
                 1px  1px 0 var(--pileBackground);
+  opacity: 1;
+  transition: opacity .2s linear;
+}
+
+pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:active mark:before {
+  opacity: .2;
 }
 
 [title~=tapped][title~=hidden] {
