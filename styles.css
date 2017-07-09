@@ -66,6 +66,7 @@ tile {
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
   text-shadow: initial;
+  font-weight: bold;
 }
 
 [title~=tapped] {
@@ -78,11 +79,6 @@ tile {
 tile:before, tile:after {
   flex: 1;
   text-align: center;
-}
-
-tile:before {
-  font-weight: bold;
-  font-size: 110%;
 }
 
 [title~='1']:before {
@@ -135,8 +131,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=hidden]:before {
-  content: '⛩';
-  font-weight: normal;
+  content: 'X';
   color: deeppink;
 }
 
@@ -145,7 +140,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=yellow]:after {
-  content: '🌼';
+  content: 'Y';
 }
 
 [title~=blue] {
@@ -153,8 +148,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=blue]:after {
-  content: '⚘';
-  font-size: 160%;
+  content: 'B';
 }
 
 [title~=green] {
@@ -162,7 +156,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=green]:after {
-  content: '☘'
+  content: 'G'
 }
 
 [title~=red] {
@@ -170,7 +164,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=red]:after {
-  content: '🌹';
+  content: 'R';
 }
 
 [title~=white] {
@@ -178,8 +172,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=white]:after {
-  content: '❀';
-  font-size: 140%;
+  content: 'W';
 }
 
 [title~=rainbow] {
@@ -187,7 +180,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=rainbow]:after {
-  content: '🌈';
+  content: 'Rb';
 }
 
 main {
