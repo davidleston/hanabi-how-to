@@ -16,7 +16,7 @@ If it's the first turn of the game and you see your teammate has the following t
       <tile title="yellow 2"></tile>
       <tile title="green 2"></tile>
       <tile title="red 4"></tile>
-      <tile title="blue 1"><highlighted></highlighted></tile>
+      <mark><tile title="blue 1"></tile></mark>
       <tile title="white 3"></tile>
     </tiles>
   </hand>
@@ -32,7 +32,7 @@ Similarly, when you are told a tile is a two, you can assume it is a playable tw
     <tiles>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
-      <tile title="hidden"><highlighted></highlighted></tile>
+      <mark><tile title="hidden"></tile></mark>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
     </tiles>
@@ -52,7 +52,7 @@ When our teammate plays their blue tile:
       <tile title="yellow 2"></tile>
       <tile title="green 2"></tile>
       <tile title="red 4"></tile>
-      <tile title="blue 1"><highlighted></highlighted></tile>
+      <mark><tile title="blue 1"></tile></mark>
       <tile title="white 3"></tile>
     </tiles>
   </hand>
@@ -198,14 +198,14 @@ The leftmost position in a hand, the position of the next tile to be discarded, 
       <tile title="red 1"></tile>
       <tile title="yellow 2"></tile>
       <tile title="green 2"></tile>
-      <tile title="red 4"><highlighted></highlighted></tile>
+      <mark><tile title="red 4"></tile></mark>
     </tiles>
   </hand>
   
   <hand>
     <header>Your hand</header>
     <tiles>
-      <tile title="hidden"><highlighted></highlighted></tile>
+      <mark><tile title="hidden"></tile></mark>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
@@ -221,7 +221,7 @@ The rightmost position in a hand is called the play position or the play side of
   <hand>
     <header>Teammate's hand</header>
     <tiles>
-      <tile title="blue 1"><highlighted></highlighted></tile>
+      <mark><tile title="blue 1"></tile></mark>
       <tile title="red 1"></tile>
       <tile title="yellow 2"></tile>
       <tile title="green 2"></tile>
@@ -236,7 +236,7 @@ The rightmost position in a hand is called the play position or the play side of
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
-      <tile title="hidden"><highlighted></highlighted></tile>
+      <mark><tile title="hidden"></tile></mark>
     </tiles>
   </hand>
 </game>
@@ -249,8 +249,8 @@ When you intend to play a tile move it to the play position. When you clue your 
     <tiles>
       <tile title="blue 1"></tile>
       <tile title="red 1"></tile>
-      <tile title="yellow 2"><highlighted></highlighted></tile>
-      <tile title="green 2"><highlighted></highlighted></tile>
+      <mark><tile title="yellow 2"></tile></mark>
+      <mark><tile title="green 2"></tile></mark>
       <tile title="red 4"></tile>
     </tiles>
   </hand>
@@ -259,8 +259,8 @@ When you intend to play a tile move it to the play position. When you clue your 
     <header>Teammate's perspective</header>
     <tiles>
       <tile title="hidden"></tile>
-      <tile title="hidden"><highlighted></highlighted></tile>
-      <tile title="hidden"><highlighted></highlighted></tile>
+      <mark><tile title="hidden"></tile></mark>
+      <mark><tile title="hidden"></tile></mark>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
     </tiles>
@@ -273,8 +273,8 @@ Your teammate will move those twos to the play position:
   <hand>
     <header>Your view of teammate's hand</header>
     <tiles>
-      <tile title="tapped yellow 2"><highlighted></highlighted></tile>
-      <tile title="tapped green 2"><highlighted></highlighted></tile>
+      <mark><tile title="tapped yellow 2"></tile></mark>
+      <mark><tile title="tapped green 2"></tile></mark>
       <tile title="blue 1"></tile>
       <tile title="red 1"></tile>
       <tile title="red 4"></tile>
@@ -287,8 +287,8 @@ Your teammate will move those twos to the play position:
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
-      <tile title="tapped hidden"><highlighted></highlighted></tile>
-      <tile title="tapped hidden"><highlighted></highlighted></tile>
+      <mark><tile title="tapped hidden"></tile></mark>
+      <mark><tile title="tapped hidden"></tile></mark>
     </tiles>
   </hand>
 </game>
@@ -300,7 +300,7 @@ When a tile is drawn it is place it immediately to the left of all the tiles int
     <header>Your view of teammate's hand</header>
     <tiles>
       <tile title="tapped green 2"></tile>
-      <tile title="rainbow 3"><highlighted></highlighted></tile>
+      <mark><tile title="rainbow 3"></tile></mark>
       <tile title="blue 1"></tile>
       <tile title="red 1"></tile>
       <tile title="red 4"></tile>
@@ -313,7 +313,7 @@ When a tile is drawn it is place it immediately to the left of all the tiles int
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
       <tile title="hidden"></tile>
-      <tile title="hidden"><highlighted></highlighted></tile>
+      <mark><tile title="hidden"></tile></mark>
       <tile title="tapped hidden"></tile>
     </tiles>
   </hand>
@@ -398,7 +398,7 @@ Tiles that you intend to not discard are said to be saved. These tiles are no lo
   <hand>
     <header>Teammate's hand</header>
     <tiles>
-      <tile title="blue 5" tapped><highlighted></highlighted></tile>
+      <mark><tile title="tapped blue 5"></tile></mark>
     </tiles>
     <tiles>
       <tile title="red 1"></tile>
@@ -416,8 +416,8 @@ Tiles that you intend to not discard are said to be saved. These tiles are no lo
       <tile title="hidden"></tile>
     </tiles>
     <tiles>
-      <tile title="hidden" tapped><highlighted></highlighted></tile>
-      <tile title="hidden" tapped><highlighted></highlighted></tile>
+      <mark><tile title="tapped hidden"></tile></mark>
+      <mark><tile title="tapped hidden"></tile></mark>
     </tiles>
   </hand>
 </game>

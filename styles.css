@@ -55,7 +55,6 @@ tiles + tiles {
 }
 
 tile {
-  order: 1;
   padding: 5px;
   display: inline-flex;
   align-items: center;
@@ -66,8 +65,6 @@ tile {
   box-shadow: inset 0 0 7px black;
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
-  position: relative;
-
 }
 
 [title~=tapped] {
@@ -107,13 +104,19 @@ tile:before {
   content: '5';
 }
 
-highlighted::before {
-  position: absolute;
-  top: -1.2em;
-  left: 0;
+mark {
+  background: transparent;
+  margin-top: calc(var(--tileHeight)*-1);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+mark:before {
   content: '☛';
   font-size: 180%;
-  transform: rotate(60deg);
+  transform: rotate(70deg);
   color: var(--tileBackground);
   text-shadow: -1px -1px 0 var(--pileBackground),
                 1px -1px 0 var(--pileBackground),
