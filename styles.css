@@ -136,6 +136,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 
 [title~=hidden]:before {
   content: '⛩';
+  font-weight: normal;
   color: deeppink;
 }
 
