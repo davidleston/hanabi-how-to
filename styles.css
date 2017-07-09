@@ -58,7 +58,7 @@ tile {
   padding: 5px;
   display: inline-flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: row;
   width: var(--tileWidth);
   height: var(--tileHeight);
@@ -73,12 +73,6 @@ tile {
   flex-direction: column;
   width: var(--tileHeight);
   height: var(--tileWidth);
-  margin-top: 0;
-}
-
-tile:before, tile:after {
-  flex: 1;
-  text-align: center;
 }
 
 [title~='1']:before {
@@ -124,10 +118,6 @@ mark:before {
 
 pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:active mark:before {
   opacity: .2;
-}
-
-[title~=tapped][title~=hidden] {
-  flex-flow: row;
 }
 
 [title~=hidden]:before {
