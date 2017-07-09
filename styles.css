@@ -93,10 +93,13 @@ highlighted::before {
   top: -1.2em;
   left: 0;
   content: '☛';
-  font-size: 200%;
+  font-size: 180%;
   transform: rotate(60deg);
   color: var(--tileBackground);
-  text-shadow: 0 0 1px var(--pileBackground);
+  text-shadow: -1px -1px 0 var(--pileBackground),
+                1px -1px 0 var(--pileBackground),
+               -1px  1px 0 var(--pileBackground),
+                1px  1px 0 var(--pileBackground);
 }
 
 [tapped][hidden] {
