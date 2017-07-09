@@ -50,7 +50,7 @@ tiles {
   justify-content: center;
 }
 
-tiles + tiles {
+hand tiles + tiles {
   margin-top: var(--tileHeight);
 }
 
