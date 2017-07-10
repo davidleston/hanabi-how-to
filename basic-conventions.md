@@ -102,19 +102,15 @@ When our temmate has the following when all the ones have been played:
       <tile title="yellow 2"></tile>
       <tile title="yellow 3"></tile>
       <tile title="yellow 4"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="blue 1"></tile>
       <tile title="blue 2"></tile>
       <tile title="blue 3"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="red 1"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="white 1"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="rainbow 1"></tile>
     </tiles>
   </pile>
@@ -153,18 +149,14 @@ If a tile that is about to be discarded is clued then the clue is to not discard
     <header>Discards</header>
     <tiles>
       <tile title="yellow 4"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="blue 3"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="red 1"></tile>
       <tile title="red 4"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="white 1"></tile>
-    </tiles>
-    <tiles>
+    </tiles><tiles>
       <tile title="rainbow 1"></tile>
     </tiles>
   </pile>

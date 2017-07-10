@@ -146,11 +146,9 @@ Safe and unsafe refers to the ability to discard a tile without losing points. F
      <header>Played tiles</header>
      <tiles>
        <tile title="yellow 1"></tile>
-     </tiles>
-     <tiles>
+     </tiles><tiles>
        <tile title="blue 1"></tile>
-     </tiles>
-     <tiles>
+     </tiles><tiles>
        <tile title="red 1"></tile>
        <tile title="red 2"></tile>
      </tiles>
@@ -160,8 +158,7 @@ Safe and unsafe refers to the ability to discard a tile without losing points. F
      <header>✓ Safe discards</header>
      <tiles>
        <tile title="yellow 1"></tile>
-     </tiles>
-     <tiles>
+     </tiles><tiles>
        <tile title="red 2"></tile>
      </tiles>
    </pile>
@@ -170,8 +167,7 @@ Safe and unsafe refers to the ability to discard a tile without losing points. F
      <header>⚠ Unsafe discards</header>
      <tiles>
        <tile title="yellow 4"></tile>
-     </tiles>
-     <tiles>
+     </tiles><tiles>
        <tile title="red 3"></tile>
        <tile title="red 4"></tile>
      </tiles>

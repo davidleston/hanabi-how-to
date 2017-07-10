@@ -177,6 +177,7 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 main {
   display: flex;
   background: var(--pileBackground);
+  flex-wrap: wrap-reverse;
 }
 
 body {
@@ -191,13 +192,14 @@ body > header {
 }
 
 nav {
-  flex: 0 0 calc(var(--tileWidth) * 4);
+  flex: 1 1 calc(var(--tileWidth) * 4);
 }
 
 article {
-  border-radius: var(--tileBorderRadius) 0 0 0;
+  border-radius: var(--tileBorderRadius);
   background: white;
   padding: 0 var(--tileHeight);
+  flex: 999 999 calc(var(--tileWidth) * 6);
 }
 
 nav ul {
