@@ -59,7 +59,7 @@ The rightmost position in a hand is called the play position or the play side of
   </hand>
 </game>
 
-When you intend to play a tile move it to the play position. When you clue your teammate "twos":
+When you intend to play a tile move it to the play position. When you clue your teammate ``twos``:
 
 <game>
   <hand>

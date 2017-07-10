@@ -129,8 +129,9 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 }
 
 [title~=hidden]:before {
-  content: 'X';
-  color: gray;
+  content: ' ';
+  border: 7px rgba(0,0,0,.4) solid;
+  border-radius: 50%;
 }
 
 [title~=yellow] {
