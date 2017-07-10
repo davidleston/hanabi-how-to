@@ -10,6 +10,7 @@
   --white: ghostwhite;
   --green: lightgreen;
   --red: deeppink;
+  --boxShadowSize: 7px;
 }
 
 html {
@@ -45,6 +46,11 @@ pile, hand {
   border: 1px solid #ccc;
 }
 
+.unsafe {
+  border-color: var(--red);
+  box-shadow: inset 0 0 var(--boxShadowSize) var(--red);
+}
+
 hand header, pile header {
   margin-bottom: var(--tileBorderRadius);
 }
@@ -67,7 +73,7 @@ tile {
   flex-direction: row;
   width: var(--tileWidth);
   height: var(--tileHeight);
-  box-shadow: inset 0 0 7px black;
+  box-shadow: inset 0 0 var(--boxShadowSize) black;
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
   --textShadowColor: rgba(255, 255, 255, .2);

@@ -155,7 +155,7 @@ Safe and unsafe refers to the ability to discard a tile without losing points. F
    </pile>
  
    <pile>
-     <header>✓ Safe discards</header>
+     <header>Safe discards</header>
      <tiles>
        <tile title="yellow 1"></tile>
      </tiles><tiles>
@@ -163,8 +163,8 @@ Safe and unsafe refers to the ability to discard a tile without losing points. F
      </tiles>
    </pile>
 
-   <pile>
-     <header>⚠ Unsafe discards</header>
+   <pile class="unsafe">
+     <header>Unsafe discards</header>
      <tiles>
        <tile title="yellow 4"></tile>
      </tiles><tiles>
