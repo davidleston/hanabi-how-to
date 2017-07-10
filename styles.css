@@ -124,7 +124,7 @@ mark:before {
 
 [title~=hidden]:before {
   content: ' ';
-  border: 7px rgba(0,0,0,.4) solid;
+  border: 7px rgba(0,0,0,.3) solid;
   border-radius: 50%;
 }
 
