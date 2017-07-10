@@ -192,7 +192,7 @@ When a tile is part of a clue it is rotated so it stands up. These tiles are sai
       <tile title="blue 1"></tile>
       <tile title="red 1"></tile>
       <tile title="tapped yellow 2"></tile>
-      <tile title="tapped green 2"></tile>
+      <tile title="tapped rainbow 2"></tile>
       <tile title="red 4"></tile>
     </tiles>
   </hand>

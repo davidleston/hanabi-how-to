@@ -1,10 +1,15 @@
 :root {
   font-family: sans-serif;
-  --tileBackground: #222;
+  --tileBackground: lightgray;
   --tileBorderRadius: 5px;
   --tileWidth: 3em;
   --tileHeight: 1.75em;
   --pileBackground: #eee;
+  --yellow: yellow;
+  --blue: deepskyblue;
+  --white: ghostwhite;
+  --green: lightgreen;
+  --red: deeppink;
 }
 
 html {
@@ -65,7 +70,11 @@ tile {
   box-shadow: inset 0 0 7px black;
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
-  text-shadow: initial;
+  --textShadowColor: rgba(255, 255, 255, .2);
+  text-shadow: -1px -1px 0 var(--textShadowColor),
+                1px -1px 0 var(--textShadowColor),
+               -1px  1px 0 var(--textShadowColor),
+                1px  1px 0 var(--textShadowColor);
   font-weight: bold;
 }
 
@@ -107,13 +116,12 @@ mark:before {
   pointer-events: none;
   font-size: 180%;
   transform: rotate(60deg);
-  color: var(--tileBackground);
   text-shadow: -1px -1px 0 var(--pileBackground),
                 1px -1px 0 var(--pileBackground),
                -1px  1px 0 var(--pileBackground),
                 1px  1px 0 var(--pileBackground);
   opacity: 1;
-  transition: opacity .2s linear;
+  transition: opacity 0.1s linear;
 }
 
 pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:active mark:before {
@@ -122,55 +130,48 @@ pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:ac
 
 [title~=hidden]:before {
   content: 'X';
-  color: deeppink;
+  color: gray;
 }
 
 [title~=yellow] {
-  color: yellow;
-}
-
-[title~=yellow]:after {
-  content: 'Y';
+  background: var(--yellow);
 }
 
 [title~=blue] {
-  color: deepskyblue;
-}
-
-[title~=blue]:after {
-  content: 'B';
+  background: var(--blue);
 }
 
 [title~=green] {
-  color: lightgreen;
-}
-
-[title~=green]:after {
-  content: 'G'
+  background: var(--green);
 }
 
 [title~=red] {
-  color: deeppink;
-}
-
-[title~=red]:after {
-  content: 'R';
+  background: var(--red);
 }
 
 [title~=white] {
-  color: ghostwhite;
-}
-
-[title~=white]:after {
-  content: 'W';
+  background: var(--white);
 }
 
 [title~=rainbow] {
-  color: ghostwhite;
+  --rotation: 90deg;
+  background: repeating-linear-gradient(
+                var(--rotation),
+                var(--red),
+                var(--red) 20%,
+                var(--yellow) 20%,
+                var(--yellow) 40%,
+                var(--white) 40%,
+                var(--white) 60%,
+                var(--green) 60%,
+                var(--green) 80%,
+                var(--blue) 80%,
+                var(--blue) 100%
+              );
 }
 
-[title~=rainbow]:after {
-  content: 'Rb';
+[title~=rainbow][title~=tapped] {
+  --rotation: 180deg;
 }
 
 main {
