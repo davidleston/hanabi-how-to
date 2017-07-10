@@ -59,7 +59,7 @@ tiles {
   display: flex;
   align-items: flex-end;
   justify-content: center;
-  --textShadowColor: rgba(255, 255, 255, .2);
+  --textShadowColor: rgba(255, 255, 255, .1);
   text-shadow: -1px -1px 0 var(--textShadowColor),
                 1px -1px 0 var(--textShadowColor),
                -1px  1px 0 var(--textShadowColor),
