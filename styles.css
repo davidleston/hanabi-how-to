@@ -10,7 +10,7 @@
   --white: ghostwhite;
   --green: lightgreen;
   --red: deeppink;
-  --boxShadowSize: 7px;
+  --boxShadowSize: 6px;
 }
 
 html {
@@ -78,7 +78,7 @@ tile {
   flex-direction: row;
   width: var(--tileWidth);
   height: var(--tileHeight);
-  box-shadow: inset 0 0 var(--boxShadowSize) black;
+  box-shadow: inset 0 0 var(--boxShadowSize) rgba(0, 0, 0, .4);
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
   font-weight: bold;
