@@ -207,9 +207,17 @@ nav li {
   --space: calc(var(--tileHeight) / 3);
   margin: 0 var(--space) var(--space) var(--space);
   padding: var(--space);
+  border-radius: var(--tileBorderRadius);
+}
+
+nav a {
+  display: block;
 }
 
 .current {
   background: white;
-  border-radius: var(--tileBorderRadius);
+}
+
+nav li:not(.current):hover {
+  background: rgba(255,255,255,.5);
 }
