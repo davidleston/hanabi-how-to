@@ -188,7 +188,7 @@ body {
 
 body > header {
   background: var(--pileBackground);
-  padding: calc(var(--tileHeight)/2) calc(var(--tileWidth)/2);
+  padding: calc(var(--tileHeight)/3) calc(var(--tileWidth)/3);
 }
 
 nav {
@@ -209,7 +209,7 @@ nav ul {
 
 nav li {
   list-style-type: none;
-  --space: calc(var(--tileHeight) / 2);
+  --space: calc(var(--tileHeight) / 3);
   margin: 0 var(--space) var(--space) var(--space);
   padding: var(--space);
 }
