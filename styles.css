@@ -59,6 +59,11 @@ tiles {
   display: flex;
   align-items: flex-end;
   justify-content: center;
+  --textShadowColor: rgba(255, 255, 255, .2);
+  text-shadow: -1px -1px 0 var(--textShadowColor),
+                1px -1px 0 var(--textShadowColor),
+               -1px  1px 0 var(--textShadowColor),
+                1px  1px 0 var(--textShadowColor);
 }
 
 hand tiles + tiles {
@@ -76,11 +81,6 @@ tile {
   box-shadow: inset 0 0 var(--boxShadowSize) black;
   background: var(--tileBackground);
   border-radius: var(--tileBorderRadius);
-  --textShadowColor: rgba(255, 255, 255, .2);
-  text-shadow: -1px -1px 0 var(--textShadowColor),
-                1px -1px 0 var(--textShadowColor),
-               -1px  1px 0 var(--textShadowColor),
-                1px  1px 0 var(--textShadowColor);
   font-weight: bold;
 }
 
@@ -116,22 +116,10 @@ mark {
 }
 
 mark:before {
-  content: '☛';
+  content: '*';
   position: absolute;
-  top: -2ex;
-  pointer-events: none;
-  font-size: 180%;
-  transform: rotate(60deg);
-  text-shadow: -1px -1px 0 var(--pileBackground),
-                1px -1px 0 var(--pileBackground),
-               -1px  1px 0 var(--pileBackground),
-                1px  1px 0 var(--pileBackground);
-  opacity: 1;
-  transition: opacity 0.1s linear;
-}
-
-pile:hover mark:before, hand:hover mark:before, pile:active mark:before, hand:active mark:before {
-  opacity: .2;
+  font-size: 200%;
+  padding-left: var(--boxShadowSize);
 }
 
 [title~=hidden]:before {
